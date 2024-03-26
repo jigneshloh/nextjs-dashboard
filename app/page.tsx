@@ -1,3 +1,5 @@
+import '@/app/ui/global.css';
+
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
@@ -17,6 +19,10 @@ export default function Page() {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           <div className={styles.shape} />
+          <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent" />
+          <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent">
+            <div className="mx-2">Test</div>
+          </div>
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
           >
@@ -41,16 +47,16 @@ export default function Page() {
             width={1000}
             height={760}
             className="hidden md:block"
+
             alt="Screenshots of the dashboard project showing desktop version"
           ></Image>
-
           <Image
             src="/hero-mobile.png"
             width={560}
             height={620}
             className="block md:hidden"
             alt="Screenshot of the dashboard project showing mobile version"
-          />
+          ></Image>
         </div>
       </div>
     </main>
